@@ -33,4 +33,11 @@ Students will create their own portfolio page/site and prepare a presentation in
 }
 ```
 
+---
+
+Firebase Hosting
+
+Project Console: https://console.firebase.google.com/project/portfolio-fa17a/overview
+Hosting URL: https://portfolio-fa17a.web.app
+Hosting URL: https://portfolio-fa17a.firebaseapp.com/
 
