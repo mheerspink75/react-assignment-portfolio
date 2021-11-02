@@ -1,0 +1,30 @@
+#c4 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#profilePic {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+#bio {
+  margin-left: 20px;
+}
+
+#name {
+  color: white;
+  font-size: xx-large;
+  margin-left: 25px;
+}
+
+#resume {
+  font-size: medium;
+  text-decoration: none;
+}
+
+#forHire {
+  text-align: left;
+  font-size: small;
+  margin-left: 25px;
+}

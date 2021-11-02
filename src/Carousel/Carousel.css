@@ -1,11 +1,5 @@
 iframe {
-    border: 1px solid black;
-    width: 100%;
-    height: 500px;
-  }
-
-  /* @media screen and (max-width: 414px) {
-    iframe {
-      height: 250px;
-    }
-  } */
+  border: 1px solid black;
+  width: 100%;
+  height: 500px;
+}

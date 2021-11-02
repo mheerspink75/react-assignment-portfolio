@@ -1,3 +1,4 @@
+import "./Repos.css";
 import React, { useEffect, useState } from "react";
 
 export const Utility = () => {

@@ -1,3 +1,4 @@
+import "./Profile.css";
 import React, { useEffect, useState } from "react";
 
 export const Profile = () => {
@@ -21,10 +22,19 @@ export const Profile = () => {
         <div className="Profile">
           <div id="c4">
             <img id="profilePic" src={profile.avatar_url} alt="profile pic" />
-            <h1 id="name">{profile.name}<br></br><a id="resume" href="https://drive.google.com/file/d/1zf5ePj1PSc1JixMhqqiZDZinqdfKVSWj/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></h1>
-            <div>
-            
-            </div>
+            <h1 id="name">
+              {profile.name}
+              <br></br>
+              <a
+                id="resume"
+                href="https://drive.google.com/file/d/1zf5ePj1PSc1JixMhqqiZDZinqdfKVSWj/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </h1>
+            <div></div>
           </div>
           <p id="bio">
             <b>{profile.bio}</b>
