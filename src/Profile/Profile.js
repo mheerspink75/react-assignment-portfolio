@@ -1,10 +1,14 @@
 import "./Profile.css";
 import React, { useEffect, useState } from "react";
 
+const resume =
+  "https://drive.google.com/file/d/1zf5ePj1PSc1JixMhqqiZDZinqdfKVSWj/view?usp=sharing";
+
+const url = "https://api.github.com/users/mheerspink75";
+
 export const Profile = () => {
   const [profile, setProfile] = useState(null);
   useEffect(() => {
-    const url = "https://api.github.com/users/mheerspink75";
     const fetchData = async () => {
       try {
         const response = await fetch(url);
@@ -25,16 +29,10 @@ export const Profile = () => {
             <h1 id="name">
               {profile.name}
               <br></br>
-              <a
-                id="resume"
-                href="https://drive.google.com/file/d/1zf5ePj1PSc1JixMhqqiZDZinqdfKVSWj/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a id="resume" href={resume} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </h1>
-            <div></div>
           </div>
           <p id="bio">
             <b>{profile.bio}</b>

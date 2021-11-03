@@ -1,6 +1,8 @@
 import "./Repos.css";
 import React, { useEffect, useState } from "react";
 
+const reposUrl = "https://api.github.com/users/mheerspink75/repos";
+
 export const Utility = () => {
   const [repos, setRepos] = useState(null);
 
@@ -8,9 +10,7 @@ export const Utility = () => {
     getData();
 
     async function getData() {
-      const response = await fetch(
-        "https://api.github.com/users/mheerspink75/repos"
-      );
+      const response = await fetch(reposUrl);
       const data = await response.json();
       setRepos(data);
     }
@@ -33,12 +33,25 @@ export const Utility = () => {
                   </a>
                 </li>
                 <li>
-                  <b>Description:</b> {repos.description === null || repos.description === "" ? <a href={repos.html_url} target="_blank" rel="noreferrer"><i>repository</i></a> : repos.description}
+                  <b>Description:</b>{" "}
+                  {repos.description === null || repos.description === "" ? (
+                    <a href={repos.html_url} target="_blank" rel="noreferrer">
+                      <i>repository</i>
+                    </a>
+                  ) : (
+                    repos.description
+                  )}
                 </li>
                 <li>
                   <b>Homepage:</b>{" "}
                   <a href={repos.homepage} target="_blank" rel="noreferrer">
-                    {repos.homepage === null || repos.homepage === "" ? <a href={repos.html_url} target="_blank" rel="noreferrer"><i>respoitory</i></a> : repos.homepage}
+                    {repos.homepage === null || repos.homepage === "" ? (
+                      <a href={repos.html_url} target="_blank" rel="noreferrer">
+                        <i>respoitory</i>
+                      </a>
+                    ) : (
+                      repos.homepage
+                    )}
                   </a>
                 </li>
               </ul>

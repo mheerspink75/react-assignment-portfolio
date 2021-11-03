@@ -37,7 +37,7 @@ export const Carousel = () => {
             className="d-block w-100"
           ></iframe>
           <div className="carousel-caption d-none d-md-block">
-            <a id="caption-1" href="https://github.com/mheerspink75/threejs-webpack-build" target="_blank" rel="noreferrer">threejs-webpack-build</a>
+            <a type="button" class="btn btn-secondary btn-sm" href="https://github.com/mheerspink75/threejs-webpack-build" target="_blank" rel="noreferrer">Repository</a>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3000">
@@ -47,7 +47,7 @@ export const Carousel = () => {
             className="d-block w-100"
           ></iframe>
           <div className="carousel-caption d-none d-md-block">
-            <a id="caption-2" href="https://github.com/mheerspink75/crypto_news" target="_blank" rel="noreferrer">crypto_news</a>
+            <a type="button" class="btn btn-secondary btn-sm" href="https://github.com/mheerspink75/crypto_news" target="_blank" rel="noreferrer">Repository</a>
           </div>
         </div>
         <div className="carousel-item">
@@ -57,7 +57,7 @@ export const Carousel = () => {
             className="d-block w-100"
           ></iframe>
           <div className="carousel-caption d-none d-md-block">
-            <a id="caption-3" href="https://github.com/mheerspink75/check_palindrome" target="_blank" rel="noreferrer">check_palindrome</a>
+            <a type="button" class="btn btn-secondary btn-sm" href="https://github.com/mheerspink75/check_palindrome" target="_blank" rel="noreferrer">Repository</a>
           </div>
         </div>
       </div>
