@@ -5,15 +5,17 @@ const reposUrl = "https://api.github.com/users/mheerspink75/repos";
 
 export const Utility = () => {
   const [repos, setRepos] = useState(null);
-
   useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await fetch(reposUrl);
+        const data = await response.json();
+        setRepos(data);
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
     getData();
-
-    async function getData() {
-      const response = await fetch(reposUrl);
-      const data = await response.json();
-      setRepos(data);
-    }
   }, []);
   return (
     <div>
