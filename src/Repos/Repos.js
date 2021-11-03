@@ -9,8 +9,12 @@ export const Utility = () => {
     const getData = async () => {
       try {
         const response = await fetch(reposUrl);
+        if (response.ok) {
         const data = await response.json();
-        setRepos(data);
+          setRepos(data);
+        } else {
+          throw new Error("NETWORK RESPONSE ERROR");
+        }
       } catch (error) {
         console.log("error", error);
       }
