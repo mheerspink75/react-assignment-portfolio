@@ -15,12 +15,15 @@
 #name {
   color: white;
   font-size: xx-large;
+  text-shadow: 2px 2px 8px #4689a1;
   margin-left: 25px;
 }
 
 #resume {
   font-size: medium;
   text-decoration: none;
+  text-shadow: none;
+  color: #1556ce;
 }
 
 #forHire {

@@ -1,3 +1,7 @@
 #repoList {
-    list-style-type: none;
-  }
+  background-color: #d2eef8;
+  list-style-type: none;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #7b8a8f;
+}
