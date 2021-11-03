@@ -10,13 +10,13 @@ export const Utility = () => {
       try {
         const response = await fetch(reposUrl);
         if (response.ok) {
-        const data = await response.json();
+          const data = await response.json();
           setRepos(data);
         } else {
           throw new Error("NETWORK RESPONSE ERROR");
         }
       } catch (error) {
-        console.log("error", error);
+        console.log("FETCH ERROR:", error);
       }
     };
     getData();
