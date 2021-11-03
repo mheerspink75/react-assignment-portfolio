@@ -37,14 +37,8 @@ export const Routing = () => {
   );
 };
 
-const Home = () => {
-  return <Carousel />;
-};
+const Home = () => <Carousel />;
 
-function Repos() {
-  return <Utility />;
-}
+const Repos = () => <Utility />;
 
-const About = () => {
-  return <AboutMe />;
-};
+const About = () => <AboutMe />;
