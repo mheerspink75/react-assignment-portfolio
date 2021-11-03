@@ -3,3 +3,8 @@
   justify-content: space-evenly;
   list-style-type: none;
 }
+
+a {
+  font-size: large;
+  text-decoration: none;
+}

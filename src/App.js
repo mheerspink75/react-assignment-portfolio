@@ -2,7 +2,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import { Routing } from "../src/Router/Router.js";
+import { Routing } from "./Router/Router";
 import { Profile } from "./Profile/Profile";
 
 export default function App() {
