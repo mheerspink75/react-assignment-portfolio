@@ -12,10 +12,14 @@ export const Profile = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
-        const data = await response.json();
-        setProfile(data);
+        if (response.ok) {
+          const data = await response.json();
+          setProfile(data);
+        } else {
+          throw new Error("NETWORK RESPONSE ERROR");
+        }
       } catch (error) {
-        console.log("error", error);
+        console.log("FETCH ERROR:", error);
       }
     };
     fetchData();
