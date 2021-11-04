@@ -10,8 +10,8 @@ export const Utility = () => {
       try {
         const response = await fetch(reposUrl);
         if (response.ok) {
-          const data = await response.json();
-          setRepos(data);
+        const data = await response.json();
+        setRepos(data);
         } else {
           throw new Error("NETWORK RESPONSE ERROR");
         }
@@ -41,24 +41,20 @@ export const Utility = () => {
                 <li>
                   <b>Description:</b>{" "}
                   {repos.description === null || repos.description === "" ? (
-                    <a href={repos.html_url} target="_blank" rel="noreferrer">
-                      <i>repository</i>
-                    </a>
+                    <i>*repository</i>
                   ) : (
                     repos.description
                   )}
                 </li>
                 <li>
                   <b>Homepage:</b>{" "}
-                  <a href={repos.homepage} target="_blank" rel="noreferrer">
-                    {repos.homepage === null || repos.homepage === "" ? (
-                      <a href={repos.html_url} target="_blank" rel="noreferrer">
-                        <i>respoitory</i>
-                      </a>
-                    ) : (
-                      repos.homepage
-                    )}
-                  </a>
+                  {repos.homepage === null || repos.homepage === "" ? (
+                    <i>*repository</i>
+                  ) : (
+                    <a href={repos.homepage} target="_blank" rel="noreferrer">
+                      {repos.homepage}
+                    </a>
+                  )}
                 </li>
               </ul>
             </div>
