@@ -9,15 +9,15 @@ export const Routing = () => {
   return (
     <Router>
       <div>
-        <ul id="routes">
+        <ul id="routes" className="btn-group" role="group" aria-label="Basic outlined example">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" type="button" className="btn btn-outline-primary btn-sm">Home</Link>
           </li>
           <li>
-            <Link to="/repos">Repos</Link>
+            <Link to="/repos" type="button" className="btn btn-outline-primary btn-sm">Repos</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" type="button" className="btn btn-outline-primary btn-sm">About</Link>
           </li>
         </ul>
 
