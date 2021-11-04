@@ -30,12 +30,12 @@ export const Utility = () => {
             <div key={index}>
               <ul id="repoList">
                 <li>
-                  <b>Name:</b>&emsp;&emsp;&emsp;<b>{repos.name}</b>;
+                  <b>Name:</b>&emsp;&emsp;&emsp;<b>{repos.name}</b>
                 </li>
                 <li>
-                  <b>Repository:</b>
+                  <b>Repository:</b>&ensp;
                   <a href={repos.html_url} target="_blank" rel="noreferrer">
-                    &ensp; {repos.html_url}
+                    {repos.html_url}
                   </a>
                 </li>
                 <li>
