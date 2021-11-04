@@ -30,7 +30,7 @@ export const Utility = () => {
             <div key={index}>
               <ul id="repoList">
                 <li>
-                  <b>Name:</b>&emsp;&emsp;&emsp;<b>{repos.name}</b>
+                  <b>Name:</b>&ensp;<b>{repos.name}</b>
                 </li>
                 <li>
                   <b>Repository:</b>&ensp;

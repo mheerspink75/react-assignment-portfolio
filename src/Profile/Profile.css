@@ -44,3 +44,9 @@
   font-size: small;
   margin-left: 25px;
 }
+
+@media screen and (max-width: 500px) {
+  #name {
+   font-size: x-large;
+  }
+}
