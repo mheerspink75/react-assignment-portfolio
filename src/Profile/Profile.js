@@ -34,7 +34,7 @@ export const Profile = () => {
               {profile.name}
               <br></br>
               <a id="resume" href={resume} target="_blank" rel="noreferrer">
-                Resume
+                <i className="bi bi-file-earmark-pdf"> Resume</i>
               </a>
             </h1>
           </div>

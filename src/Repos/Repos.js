@@ -10,8 +10,8 @@ export const Utility = () => {
       try {
         const response = await fetch(reposUrl);
         if (response.ok) {
-        const data = await response.json();
-        setRepos(data);
+          const data = await response.json();
+          setRepos(data);
         } else {
           throw new Error("NETWORK RESPONSE ERROR");
         }

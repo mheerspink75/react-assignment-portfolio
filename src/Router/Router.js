@@ -9,15 +9,38 @@ export const Routing = () => {
   return (
     <Router>
       <div>
-        <ul id="routes" className="btn-group" role="group" aria-label="Basic outlined example">
+        <ul
+          id="routes"
+          className="btn-group"
+          role="group"
+          aria-label="Basic outlined example"
+        >
           <li>
-            <Link to="/" type="button" className="btn btn-outline-primary btn-sm">Home</Link>
+            <Link
+              to="/"
+              type="button"
+              className="btn btn-outline-primary btn-sm"
+            >
+              <i className="bi bi-house-fill"></i> Home
+            </Link>
           </li>
           <li>
-            <Link to="/repos" type="button" className="btn btn-outline-primary btn-sm">Repos</Link>
+            <Link
+              to="/repos"
+              type="button"
+              className="btn btn-outline-primary btn-sm"
+            >
+              <i className="bi bi-github"></i> Repos
+            </Link>
           </li>
           <li>
-            <Link to="/about" type="button" className="btn btn-outline-primary btn-sm">About</Link>
+            <Link
+              to="/about"
+              type="button"
+              className="btn btn-outline-primary btn-sm"
+            >
+              <i className="bi bi-file-person-fill"></i> About
+            </Link>
           </li>
         </ul>
 

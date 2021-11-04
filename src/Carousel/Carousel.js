@@ -39,12 +39,12 @@ export const Carousel = () => {
           <div className="carousel-caption d-none d-md-block">
             <a
               type="button"
-              className="btn btn-secondary btn-sm"
+              className="btn btn-outline-primary btn-sm"
               href="https://github.com/mheerspink75/threejs-webpack-build"
               target="_blank"
               rel="noreferrer"
             >
-              Repository
+              <i className="bi bi-git"> Repo</i>
             </a>
           </div>
         </div>
@@ -57,12 +57,12 @@ export const Carousel = () => {
           <div className="carousel-caption d-none d-md-block">
             <a
               type="button"
-              className="btn btn-secondary btn-sm"
+              className="btn btn-outline-primary btn-sm"
               href="https://github.com/mheerspink75/crypto_news"
               target="_blank"
               rel="noreferrer"
             >
-              Repository
+              <i className="bi bi-git"> Repo</i>
             </a>
           </div>
         </div>
@@ -75,12 +75,12 @@ export const Carousel = () => {
           <div className="carousel-caption d-none d-md-block">
             <a
               type="button"
-              className="btn btn-secondary btn-sm"
+              className="btn btn-outline-primary btn-sm"
               href="https://github.com/mheerspink75/check_palindrome"
               target="_blank"
               rel="noreferrer"
             >
-              Repository
+              <i className="bi bi-git"> Repo</i>
             </a>
           </div>
         </div>

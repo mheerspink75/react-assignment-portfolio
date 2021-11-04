@@ -3,6 +3,19 @@
   justify-content: flex-start;
 }
 
+#image-container {
+  width: 100px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #profilePic {
   width: 150px;
   margin-bottom: 20px;
