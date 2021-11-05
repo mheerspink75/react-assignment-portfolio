@@ -39,7 +39,7 @@ Students will create their own portfolio page/site and prepare a presentation in
 
 Hosting URL1: https://portfolio-fa17a.web.app
 
-Hosting URL2: https://portfolio-fa17a.firebaseapp.com/
+Hosting URL2: https://portfolio-fa17a.firebaseapp.com
 
 Google Domains URL: https://webportfolio.dev
 
